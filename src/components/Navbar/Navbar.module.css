@@ -1,0 +1,18 @@
+.nav {
+    grid-area:n;
+    background-color: black;
+}
+.item a {
+    color: white;
+    font-weight:lighter;
+    font-family: fantasy;
+}
+.item a.activeLink {
+    color: cornflowerblue;
+}
+.friends {
+    margin-left: 40px;
+    font-family: fantasy;
+    margin-top: 80px;
+    font-size: 30px;
+}

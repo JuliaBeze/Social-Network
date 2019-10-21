@@ -1,0 +1,14 @@
+.sidebar {
+    background-color: white;
+    font-family: fantasy;
+    color: black;
+    margin-top: 100px;
+}
+.sidebarFriends {
+    background-color: white;
+    font-family:"Times New Roman";
+}
+.sidebar img {
+    width: 30px;
+    height: 30px;
+}

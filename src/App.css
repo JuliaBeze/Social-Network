@@ -1,0 +1,33 @@
+.app-wrapper {
+    margin: 0 auto;
+    display: grid;
+    background-color:black;
+    grid-template-areas: "h h" "n с";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+
+    /*grid-gap: 10px;*/
+}
+
+.app-wrapper-content {
+    grid-area: с;
+    background-color: ghostwhite;
+    font-family: fantasy;
+}
+.app-wrapper-content img {
+    width: 290px;
+    height: 200px;
+    margin-left: px;
+    border-radius: 20px;
+
+}
+
+.app-wrapper.friends {
+    font-family: fantasy;
+}
+.app-wrapper-content-users img{
+    width: 200px;
+    height: 190px;
+    margin-left: px;
+    border-radius: 20px;
+}

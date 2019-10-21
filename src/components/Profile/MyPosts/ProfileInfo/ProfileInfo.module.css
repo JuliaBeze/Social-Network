@@ -1,0 +1,10 @@
+.descriptionBlock {
+    padding: 20px;
+}
+
+.descriptionBlock img {
+    width: 200px;
+    border: 100px ; /* Параметры рамки */
+    box-shadow: 0 0 8px #666; /* Параметры тени */
+}
+

@@ -1,0 +1,20 @@
+.header {
+    grid-area:h;
+    background-color: black;
+    color: white;
+}
+.header img {
+    width: 100px;
+
+}
+
+.loginBlock {
+     float: right;
+     font-weight: bold;
+     font-size: 20px;
+     font-family: fantasy;
+
+ }
+.loginBlock a{
+    color: white;
+}
