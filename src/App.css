@@ -2,6 +2,7 @@
     margin: 0 auto;
     display: grid;
     background-color:black;
+    font-family: OpenSans, sans-serif;
     grid-template-areas: "h h" "n с";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
@@ -15,10 +16,11 @@
     font-family: fantasy;
 }
 .app-wrapper-content img {
-    width: 290px;
-    height: 200px;
-    margin-left: px;
-    border-radius: 20px;
+
+
+
+
+
 
 }
 

@@ -2,22 +2,22 @@ import React from 'react';
 import s from './../Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 import PropTypes from 'prop-types';
-
+// профили пользователей в диалогах
 const DialogItem = (props) => {
     let path = "/dialogs/" + props.id;
 
     return <div className={s.dialog + ' ' + s.active}>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKaouTJ-tkIb1VXuGjDb-UJpC_EILxVA0lss1vPF89ntJRuP1Z'/>
-            <NavLink to={path}>{props.name}</NavLink>
+        <img src='https://мессенджеры-скачать.рф/wp-content/uploads/2017/11/Vstupitelnoe-izobrazhenie.png'/>
+        <NavLink to={path}>{props.name}</NavLink>
         <div>
 
         </div>
-        </div>
+    </div>
 }
 
-DialogItem.propTypes ={
+DialogItem.propTypes = {
     name: PropTypes.string,
-    id:PropTypes.number
+    id: PropTypes.number
 };
 
 export default DialogItem;

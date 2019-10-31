@@ -1,23 +1,32 @@
 
 .postsBlock{
     padding: 50px;
-
+    background-color:cornflowerblue;;
 }
 .posts {
+
     margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
 }
 .postsBlock {
-    font-family: fantasy;
+    font-family: Montserat sans-serif;
+    font-size: 35px;
+    text-align: center;
 
   }
 .postsBlock textarea {
-    border: 1px solid #888;
-    width: 1300px;
+    border: 1px solid dodgerblue;
+    width: 500px;
     height: 100px;
-    background-color: silver;
+    background-color: paleturquoise;
     border-radius: 10px;
     box-shadow: 0 0 8px #666; /* Параметры тени */
 }
 .postsBlock button {
     margin-right: auto;
+    margin-top: 10px;
+    width: 79px;
+    height: 40px;
+    border-radius: 12px;
 }

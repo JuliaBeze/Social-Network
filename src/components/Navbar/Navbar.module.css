@@ -1,6 +1,10 @@
 .nav {
     grid-area:n;
     background-color: black;
+    padding: 25px;
+    letter-spacing: 0.1em;
+  font-size: 20px;
+    line-height:150%
 }
 .item a {
     color: white;

@@ -26,7 +26,6 @@ let store = {
                 {id: 2, message: 'How is your study'},
                 {id: 3, message: 'Bye'},
                 {id: 4, message: 'Bye'},
-                {id: 4, message: 'Bye'}
             ],
             newMessageBody: ""
         },

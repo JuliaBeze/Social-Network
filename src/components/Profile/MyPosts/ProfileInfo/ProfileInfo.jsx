@@ -10,10 +10,11 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <div>
+            <div className={s.mainImg}>
                 <img
-                    src='https://wallpapershome.ru/images/wallpapers/s-visoti-ptichego-poleta-1280x720-gorod-4k-5k-iphone-oboi-13494.jpg'/>
+                    src='https://riseup.by/resource/images/2019/06/pic1.png'/>
             </div>
+            <div className={s.title}>Social Network</div>
             <div className={s.descriptionBlock}>
                 <img src={props.profile.photos.large}/>
                 <div>{props.profile.contacts.facebook}</div>
@@ -21,9 +22,9 @@ const ProfileInfo = (props) => {
                 <div>{props.profile.contacts.twitter}</div>
                 <ProfileStatus status = {props.status}
                 updateStatus = {props.updateStatus}/>
-
             </div>
-        </div>
+            </div>
+
     )
 }
 

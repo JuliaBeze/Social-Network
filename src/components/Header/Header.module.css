@@ -9,6 +9,8 @@
 }
 
 .loginBlock {
+    margin: 10px;
+    letter-spacing: 0.1em;
      float: right;
      font-weight: bold;
      font-size: 20px;
@@ -17,4 +19,8 @@
  }
 .loginBlock a{
     color: white;
+}
+.loginBlock button{
+
+
 }
