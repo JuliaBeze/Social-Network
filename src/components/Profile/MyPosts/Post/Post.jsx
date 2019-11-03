@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Post.module.css';
-import PropTypes from 'prop-types';
+
 //посты,главная страница Profile
 const Post =(props)=> {
 
@@ -15,8 +15,6 @@ const Post =(props)=> {
 
     )
 }
-Post.propTypes ={
-    message:PropTypes.string
-};
+
 
 export default Post;

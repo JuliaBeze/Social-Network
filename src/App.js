@@ -6,7 +6,7 @@ import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import { Route, withRouter} from "react-router-dom";
-import PropTypes from 'react';
+
 import Sidebar from "./components/Navbar/Sidebar";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer"
@@ -63,8 +63,3 @@ const mapStateToProps = (state)=>{
 export default compose (
     withRouter,
     connect(mapStateToProps,{initializeApp}))(App);
-
-App.propTypes ={
-    dialogsPage: PropTypes.string,
-    profilePage: PropTypes.string,
-}

@@ -13,7 +13,7 @@ const Dialogs = (props) => {
 
     let state = props.dialogsPage;
 
-    let dialogsElements = props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);        //Профили диалогов
+    let dialogsElements = props.dialogsPage.dialogs.map(d => <DialogItem key = {d.id} name={d.name} id={d.id}/>);        //Профили диалогов
 
     let messageElements = props.dialogsPage.messages.map(m => <Message message={m.message}/>);       //Сообщения диалогов
 

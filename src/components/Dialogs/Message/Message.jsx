@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './../Dialogs.module.css';
-import PropTypes from 'prop-types';
 // сообщения пользователей в диалогах
 const Message = (props) => {
 
@@ -17,8 +16,6 @@ const Message = (props) => {
     </div>
 }
 
-Message.propTypes ={
-   message: PropTypes.string
-}
+
 export default Message;
 
