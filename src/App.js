@@ -41,7 +41,8 @@ class App extends Component {
                         <Route path='/dialogs' render={() => <DialogsContainer/>}/>
                         <Route path='/profile/:userId?'
                                render={() => <ProfileContainer/>}/>
-                        <Route path='/news' render={() => <News/>}/>
+
+
                         <Route path='/music' render={() => <Music/>}/>
                         <Route path='/settings' render={() => <Settings/>}/>
                         <div className='app-wrapper-content-users'>

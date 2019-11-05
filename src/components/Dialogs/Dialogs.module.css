@@ -9,7 +9,7 @@ display: grid;
     padding: 100px;
     width: 550px;
     height: 46vh;
-    background-color: paleturquoise;
+    background-color: #edeef0;
     font-family: "Times New Roman";
     margin: 0 auto;
 
@@ -18,7 +18,7 @@ display: grid;
     color: skyblue;
 }
 .messages{
-    background-image: url("https://image.freepik.com/free-vector/_34259-135.jpg");
+    background-color: #edeef0;
     text-align: left;
     text-indent: 1.5em;
     padding-top: 140px;
@@ -26,7 +26,7 @@ display: grid;
     height: 54vh;
     font-size: 17px;
 
-    background-color: paleturquoise;
+    background-color: #edeef0;
     font-family: "Times New Roman";
 
 }

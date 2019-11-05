@@ -4,11 +4,9 @@ import s from './ProfileInfo.module.css';
 
 class ProfileStatus extends React.Component {
 
-
-
     state = {
         editMode:false,
-        status: !this.props.status
+        status: this.props.status
     };
 
     activateEditMode = () => {
@@ -16,13 +14,6 @@ class ProfileStatus extends React.Component {
             editMode: true
         })
     };
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (prevProps.status !== this.props.status){
-            this.setState({
-                status: !this.props.status
-            })
-        }
-    }
 
     deactivateEditMode = () =>{
         this.setState({
@@ -30,6 +21,16 @@ class ProfileStatus extends React.Component {
         });
         this.props.updateStatus(this.state.status)
     };
+//срабатывает при любом изменении, либо в пропсах,либо локального стейта
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.status !== this.props.status){
+            this.setState({
+                status: this.props.status
+            })
+        }
+    }
+
+
     onStatusChange = (e)=>{
         this.setState({
            status: e.currentTarget.value
@@ -45,7 +46,7 @@ class ProfileStatus extends React.Component {
                 <div>
                     {!this.state.editMode &&
                         <div>
-                            <span onDoubleClick={this.activateEditMode}>{this.props.status || "///"}</span>
+                            <span onDoubleClick={this.activateEditMode}>{this.props.status || "///"} </span>
                         </div>
                     }
                     {this.state.editMode &&

@@ -8,6 +8,7 @@ import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 
 
+
 // setInterval(() => {
 //     store.dispatch({type: "FAKE"})
 // }, 1000)
@@ -16,7 +17,7 @@ let rerenderEntireTree = () => {
     ReactDOM.render(
         <BrowserRouter>
             <Provider store= {store}>
-                <App/>,
+                <App/>
             </Provider>
         </BrowserRouter>,
             document.getElementById('root'));

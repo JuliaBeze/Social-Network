@@ -1,25 +1,37 @@
 .descriptionBlock {
-    font-family: "Open Sans",sans-serif;
+    font-family: Montserat sans-serif;
     padding: 20px;
-    background-color: crimson;
+    background-color: #edeef0;
+
 }
 
 .descriptionBlock img {
-
-    width: 200px;
+    text-align: right;
+    background-color: beige;
+    width: 180px;
     border: 100px ; /* Параметры рамки */
     box-shadow: 0 0 8px #666; /* Параметры тени */
 }
 
 .title {
-    text-decoration: underline;
-    font-size: 45px;
-    color: crimson;;
+
+    font-family: Montserat sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    color: crimson;
     text-align: right;
     margin-bottom: 50px;
     margin-right: 50px;
 }
 .mainImg{
-    margin-top: 45px;
-    margin-left: 45px;
+
+    background-color: #edeef0;
+}
+
+.mainImg img {
+    width: 400px;
+    background-color: #edeef0;
+    margin-left: 460px;
+    margin-top: 40px;
+
 }
