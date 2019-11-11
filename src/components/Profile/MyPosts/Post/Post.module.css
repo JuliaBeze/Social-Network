@@ -1,9 +1,12 @@
 .item {
     color: black;
-    font-family: "Times New Roman"
+    font-family: "Times New Roman";
+
+
+
 }
 .item img {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border-radius: 40px;
 }

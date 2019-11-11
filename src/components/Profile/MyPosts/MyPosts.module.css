@@ -22,6 +22,7 @@
 border: 1px solid beige ;
     width: 400px;
     height: 100px;
+    color: #666666;
     background-color:beige;
     border-radius: 10px;
     box-shadow: 0 0 8px cornflowerblue;; /* Параметры тени */

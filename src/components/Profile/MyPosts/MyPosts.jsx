@@ -12,7 +12,10 @@ const maxLength10 = maxLengthCreator(10)
 const MyPosts = React.memo(props => {
     console.log("RENDER YO");
     let postsElements =
-        props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>);
+        [...props.posts]
+        //переворачивает массив
+            .reverse()
+            .map(p => <Post message={p.message} likesCount={p.likesCount}/>);
 
     // shouldComponentUpdate(nextProps, nextState) {
     //     return nextProps!== this.props || nextState!== this.state;

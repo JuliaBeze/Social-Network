@@ -1,9 +1,35 @@
 
-.userPhoto{
-    width: 30px;
-    height: 900px;
+.userPhoto {
+    background-color: #edeef0;
 }
+
 .selectedPage {
     font-weight: bold;
     font-size: 20px;
+    background-color: #edeef0;
+}
+
+.usersPage {
+    background-color: #edeef0;
+    font-size: 15px;
+}
+
+.users img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+
+}
+
+.usersName{
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: Montserat sans-serif;
+      text-decoration: underline;
+  }
+
+.usersInfo{
+    font-size: 20px;
+    font-family: Montserat sans-serif;
+
 }
