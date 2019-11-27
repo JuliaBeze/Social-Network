@@ -1,14 +1,13 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../../Common/Preloader/Preloader";
-import ProfileStatus from "./ProfileStatus";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
     if (!props.profile){
         return <Preloader/>
     }
-//https://riseup.by/resource/images/2019/06/pic1.png
+
     return (
         <div>
             <div className={s.mainImg}>

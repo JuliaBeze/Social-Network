@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import store from "./redux/redux-store";
-import App from './App';
-import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
-
+import SocialApp from "./App";
 
 
 // setInterval(() => {
@@ -15,11 +12,7 @@ import {BrowserRouter} from "react-router-dom";
 
 let rerenderEntireTree = () => {
     ReactDOM.render(
-        <BrowserRouter>
-            <Provider store= {store}>
-                <App/>
-            </Provider>
-        </BrowserRouter>,
+                <SocialApp/>,
             document.getElementById('root'));
             };
 
