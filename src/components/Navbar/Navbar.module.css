@@ -1,16 +1,14 @@
 .nav {
     font-size: 22px;
-    line-height: 26px;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+padding-top: 160px;
+
     margin-bottom: 8px;
     grid-area:n;
-    padding: 25px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
     text-decoration: none;
 margin: 35px;
-
+    font-family: Montserat sans-serif;
     background-color: #edeef0;
 
 }

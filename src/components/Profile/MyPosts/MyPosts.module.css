@@ -9,23 +9,26 @@
     margin-top: 10px;
     text-align: left;
     font-size: 20px;
-    color: #666666;
+
 }
 .postsBlock {
+
     font-family: Montserat sans-serif;
     font-size: 25px;
     text-align: center;
     color: #666666;
 
   }
+.title{
+    background-color:#2a5885;
+    color: white;
+    font-family: Montserat sans-serif;
+}
 .postsBlock textarea {
 border: 1px solid beige ;
-    width: 400px;
+    width: 1000px;
     height: 100px;
-    color: #666666;
-    background-color:beige;
-    border-radius: 10px;
-    box-shadow: 0 0 8px cornflowerblue;; /* Параметры тени */
+
 }
 .postsBlock button {
     margin-right: auto;

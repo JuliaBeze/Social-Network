@@ -11,6 +11,7 @@ const LoginForm = ({handleSubmit, error,captchaUrl}) => {
     return (
         <form onSubmit={handleSubmit}>
             <div className={styles.login}>
+
                     {createField("Email", "email", [required], Input)}
                     {createField("Password", "password", [required], Input, {type: "password"})}
                     {createField(null, "remember me", [], Input, {type: "checkbox"}, "remember me")}
@@ -41,8 +42,8 @@ const Login = (props) => {
     if (props.isAuth) {
         return <Redirect to={"/profile"}/>
     }
-    return <div>
-        <h1>Login</h1>
+    return <div className={styles.loginForm}>
+
         <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}
 
         />

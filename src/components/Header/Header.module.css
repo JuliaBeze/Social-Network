@@ -1,11 +1,15 @@
 .header {
+
     grid-area:h;
     background-color:#2a5885;
     color: white;
-    height: px;
+    height:60px;
 }
 .header img {
     width: 57px;
+    height: 60px;
+    border-radius: 90%;
+    padding-left: 10px;
 
 }
 
@@ -13,18 +17,19 @@
 
     margin: 10px;
     letter-spacing: 0.1em;
-     float: right;
-     font-weight: bold;
-     font-size: 20px;
+    float: right;
+    font-weight: bold;
+    font-size: 17px;
     font-family: Montserat sans-serif;
 
  }
 .loginBlock a{
     color: white;
+    font-family: Montserat sans-serif;
+
 }
 .loginBlock button{
     font-family: Montserat sans-serif;
-    padding: 4px 8px 5px;
-    margin-left: -70px;
-    margin-top:-25px;
+margin-left: 40px;
+
 }

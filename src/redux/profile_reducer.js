@@ -11,7 +11,6 @@ const initialState = {
     posts: [
         {id: 1, message: 'Hi,how are you?', likesCount: 5},
         {id: 2, message: 'It`s my first project', likesCount: 3},
-        {id: 2, message: 'Bye', likesCount: 3}
     ],
     profile: null,
     contacts: [],

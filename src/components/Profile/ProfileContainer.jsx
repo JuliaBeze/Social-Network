@@ -40,9 +40,9 @@ class ProfileContainer extends React.Component{
             <div>
 
                 <Profile
-                    isOwner = {!this.props.match.params.userId}
+                    isOwner={!this.props.match.params.userId}
                     {...this.props}
-                savePhoto = {this.props.savePhoto}/>
+                    savePhoto={this.props.savePhoto}/>
                 updateStatus = {this.props.updateStatus}/>
             </div>
         )

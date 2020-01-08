@@ -5,7 +5,7 @@
 
 .selectedPage {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     background-color: #edeef0;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .users img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
 
 }

@@ -1,42 +1,48 @@
 .descriptionBlock {
     font-family: Montserat sans-serif;
-    padding: 20px;
     background-color: #edeef0;
-
+    padding-left: 40px;
+    padding-top: 40px;
 
 }
 
 .descriptionBlock img {
-    text-align: right;
+
     background-color: beige;
-    width: 180px;
+    width: 150px;
+
+    border-radius: 70%;
     border: 100px ; /* Параметры рамки */
     box-shadow: 0 0 8px #666; /* Параметры тени */
 }
 
-.title {
+/*.title {*/
 
-    font-family: Montserat sans-serif;
-    text-decoration: none;
-    font-size: 40px;
-    color: crimson;
-    text-align: right;
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
+/*    font-family: Montserat sans-serif;*/
+/*    text-decoration: none;*/
+/*    font-size: 40px;*/
+/*    color: crimson;*/
+/*    text-align: right;*/
+/*    margin-bottom: 50px;*/
+/*    margin-right: 50px;*/
+/*}*/
 .mainImg{
-
     background-color: #edeef0;
 }
 
 .mainImg img {
-    width: 400px;
-    background-color: #edeef0;
-    margin-left: 460px;
-    margin-top: 40px;
-
+    width: 660px;
+    height: 410px;
+    float: right;
 }
 
 .contact{
     padding-left: 20px;
+}
+
+.profileData{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Times New Roman";
+    font-size: 16px;
 }
