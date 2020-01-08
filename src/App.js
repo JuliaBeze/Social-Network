@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route, withRouter} from "react-router-dom";
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
+//import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer"
-import ProfileContainer from "./components/Profile/ProfileContainer";
+//import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
@@ -15,6 +15,9 @@ import {initializeApp} from "./redux/app_reducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import store from "./redux/redux-store";
 
+
+const ProfileContainer = React.lazy(()=> import('./components/Dialogs/DialogsContainer'));
+const DialogsContainer = React.lazy(()=> import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
 
@@ -36,9 +39,18 @@ class App extends Component {
                     </div>
                 </div>
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render={() => <DialogsContainer/>}/>
+                    <Route path='/dialogs' render={() => {
+                        return <React.Suspense fallback={<div>Загрузка...</div>}>
+                            <DialogsContainer/>
+                        </React.Suspense>
+                    }}/>
                     <Route path='/profile/:userId?'
-                           render={() => <ProfileContainer/>}/>
+                           render={() => {
+                               return <React.Suspense fallback={<div>Загрузка...</div>}>
+                                   <ProfileContainer/>
+                               </React.Suspense>
+                           }
+                           }/>
                     <Route path='/music' render={() => <Music/>}/>
                     <Route path='/settings' render={() => <Settings/>}/>
                     <div className='app-wrapper-content-users'>
