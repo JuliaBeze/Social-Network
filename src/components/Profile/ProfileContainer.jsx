@@ -53,7 +53,6 @@ class ProfileContainer extends React.Component{
 
 
 let mapStateToProps = (state) => {
- //   console.log('mapStateToProps PROFILE')
     return {
         profile: state.profilePage.profile,
         status: state.profilePage.status,
@@ -66,6 +65,5 @@ let mapStateToProps = (state) => {
 export default compose(
     connect(mapStateToProps, {getUserProfile,getStatus,updateStatus,savePhoto,saveProfile}),
     withRouter,
-    // withAuthRedirect,
 )(ProfileContainer)
 

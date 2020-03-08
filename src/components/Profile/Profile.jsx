@@ -23,9 +23,5 @@ const Profile = (props) => {
 }
 
 
-// Profile.propTypes = {
-//     addPost: PropTypes.func
-// };
-
 
 export default Profile;

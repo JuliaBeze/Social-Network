@@ -1,14 +1,15 @@
 .dialogs {
 display: grid;
     grid-template-columns:2fr 10fr;
+
 }
+
 .dialogsItems{
+
     font-size: 20px;
     font-weight: bold;
     padding: 100px;
     width: 550px;
-    height: 46vh;
-    /*background-color: #edeef0;*/
     font-family: "Times New Roman";
     margin: 0 auto;
 
@@ -22,7 +23,6 @@ display: grid;
     text-indent: 1.5em;
     padding-top: 100px;
     width: 550px;
-    height: 54vh;
     font-size: 17px;
     font-family: "Times New Roman";
 
