@@ -5,24 +5,17 @@ const SET_USERS_DATA = 'social-network/auth/SET_USERS_DATA';
 const GET_CAPTCHA_URL_SUCCESS = 'social-network/auth/GET_CAPTCHA_URL_SUCCESS';
 
 
-export type InitialStateType = {
-    userId: number | null,
-    email:  string | null,
-    login: string | null,
-    isFetching: boolean,
-    isAuth: boolean,
-    captchaUrl: string | null
-}
 
-const initialState:InitialStateType = {
-    userId: null,
-    email: null,
-    login: null,
+const initialState = {
+    userId: null as number | null,
+    email: null as string | null,
+    login: null as string | null,
     isFetching: true,
     isAuth: false,
-    captchaUrl: null // if null, then captcha is not required
+    captchaUrl: null as string | null // if null, then captcha is not required
 };
 
+export type InitialStateType = typeof initialState;
 
 
 
@@ -30,6 +23,7 @@ const authReducer = (state = initialState, action:any):InitialStateType => {
     switch (action.type) {
         case SET_USERS_DATA:
             return {
+
                 ...state,
                 ...action.payload,
             };
@@ -37,7 +31,7 @@ const authReducer = (state = initialState, action:any):InitialStateType => {
             return {
                 ...state,
                 ...action.payload
-            }
+            };
         default:
             return state
     }
