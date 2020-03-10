@@ -10,7 +10,7 @@ const inirialState ={
 const sidebarReducer = (state=inirialState,action) => {
 
     return state
-}
+};
 
 
 
